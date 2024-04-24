@@ -49,6 +49,11 @@
         /// <summary>
         /// "All statuses (excluding ""Deleted"")"
         /// </summary>
-        CAMPAIGN_STATUS_NOT_DELETE
+        CAMPAIGN_STATUS_NOT_DELETE,
+
+        /// <summary>
+        /// The advertiser account punish
+        /// </summary>
+        ADVERTISER_ACCOUNT_PUNISH
     }
 }
