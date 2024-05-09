@@ -390,6 +390,9 @@ namespace TikTok.ApiClient.Entities
 		[JsonProperty("frequency")]
         public string Frequency { get; set; }
 
+		    [JsonProperty("onsite_shopping")]
+        public string OnsiteShopping { get; set; }
+
         // SKAN Metrics
 
         [JsonProperty("skan_conversion")]
