@@ -98,7 +98,10 @@ namespace TikTok.ApiClient.Services
                 var message = new HttpRequestMessage(HttpMethod.Get, $"{resourceUrl}?{queryStringCollection}");
                 var currentPageResponse = await Execute<TRoot>(message);
                 var currentPageResult = Extract<TRoot, TWrapper, TEntity>(currentPageResponse);
-                entityList.AddRange(currentPageResult.List);
+                if(!(currentPageResult.List is null))
+                {
+                    entityList.AddRange(currentPageResult.List);
+                }
             }
         }
 
