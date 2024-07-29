@@ -51,6 +51,12 @@ namespace TikTok.ApiClient.Exceptions
         }
 
         /// <summary>
+        /// Initializes a new instance of <see cref="ApiException"/> class.
+        /// </summary>
+        /// <param name="message">The Exception.message</param>
+        public ApiException(string message) : base(message) { }
+
+        /// <summary>
         /// Gets HTTP status code returned by HTTP request.
         /// </summary>
         public HttpStatusCode HttpStatusCode
