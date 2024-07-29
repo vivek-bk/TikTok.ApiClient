@@ -104,7 +104,7 @@ namespace TikTok.ApiClient.Services
                 }
                 else
                 {
-                    throw new ApiException($"Api Request failed with Api Response JSON as: {JsonConvert.SerializeObject(currentPageResponse)} for request JSON {JsonConvert.SerializeObject(message)}");
+                    throw new ApiException(currentPageResponse.Message,new ApiError { Code = currentPageResponse.code, Data = currentPageResponse.Data, Message = currentPageResponse.Message });
                 }
             }
         }
