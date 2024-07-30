@@ -104,7 +104,7 @@ namespace TikTok.ApiClient.Services
                 }
                 else
                 {
-                    throw new ApiException(currentPageResponse.Message,new ApiError { Code = currentPageResponse.code, Data = currentPageResponse.Data, Message = currentPageResponse.Message });
+                    throw new ApiException($"ApiResponseCode: {currentPageResponse.code}, ErrorMessage: {currentPageResponse.Message}",new ApiError { Code = currentPageResponse.code, Data = currentPageResponse.Data, Message = currentPageResponse.Message });
                 }
             }
         }
