@@ -221,5 +221,10 @@ namespace TikTok.ApiClient.Enums
         /// Industry qualification is rejected (can be used as filter)
         /// </summary>
         ADGROUP_STATUS_INDUSTRY_QUALIFICATION_DENY,
+
+        /// <summary>
+        /// Transcoding of the video or videos in the ad group failed.
+        /// </summary>
+        ADGROUP_STATUS_TRANSCODING_FAIL,
     }
 }
